@@ -17,6 +17,7 @@
     - Previous track: `alt` + `shift` + `,`
     - Toggle repeat off/single song/whole playlist: `alt` + `shift` + `r`
     - Toggle shuffle: `alt` + `shift` + `s`
+    
 4. Clone this repo, and `cd` to repo directory:
     ```
     $ git clone https://github.com/wlelab/SpotifyPi.git
