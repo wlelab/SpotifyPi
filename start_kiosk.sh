@@ -10,14 +10,6 @@ do
 
   sleep 1
 
-  # /usr/bin/chromium-browser \
-  #   --kiosk \
-  #   --profile-directory=Default\
-  #   --test-type \
-  #   --disable-web-security \
-  #   --user-data-dir \
-  #   https://open.spotify.com
-
   /usr/bin/chromium-browser \
     --kiosk \
     --noerrdialogs\
