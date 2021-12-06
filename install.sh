@@ -5,6 +5,7 @@ apt -y install chromium-browser
 apt -y install python3
 apt -y install python3-pip
 apt -y install libwidevinecdm0
+apt -y install avahi-daemon
 
 pip3 install websockets
 pip3 install pyautogui
