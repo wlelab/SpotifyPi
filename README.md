@@ -59,7 +59,7 @@
         toggle_shuffle - toggle shuffle
         toggle_repeat_state - toggle repeat off / single song / whole playlist
         shutdown - shutdown machine
-        reboot - rebbot machine
+        reboot - reboot machine
     ```
 
     test.py's parameters format:
