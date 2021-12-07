@@ -1,5 +1,7 @@
 # SpotifyPi
 
+## Setup
+
 1. Update Raspberry Pi OS:
     ```
     $ sudo apt update
@@ -31,4 +33,47 @@
     ```
 
 
+## Remote control via WebSocket
+
+1. On other PC, clone this repo, and `cd` to repo directory:
+    ```
+    $ git clone https://github.com/wlelab/SpotifyPi.git
+    $ cd SpotifyPi
+    ```
+2. Install websockets using pip3:
+    ```
+    $ pip3 install websockets
+    ```
+3. Run test.py:
+    ```
+    $ python3 test.py
+
+    Usage: test.py [URL] [command]
+
+    command list:
+        get_volume - get current volume value
+        set_volume [number] - set volume, number value range: 0 ~ 100
+        toggle_play_pause - toggle play / pause
+        next_track - next track
+        prev_track - previous track
+        toggle_shuffle - toggle shuffle
+        toggle_repeat_state - toggle repeat off / single song / whole playlist
+        shutdown - shutdown machine
+        reboot - rebbot machine
+    ```
+
+    test.py's parameters format:
+    ```
+    $ python3 test.py ws://<Your Raspberry Pi IP address>:<Port> <command>
+    ```
+4. For example, to set the volume:
+    ```
+    $ python3 test.py ws://192.168.1.110:9487 set_volume 50
+    ```
+    (Assume that the IP address of the Raspberry Pi is 192.168.1.110)
+
+5. For example, toggle Play / Pause:
+    ```
+    $ python3 test.py ws://192.168.1.110:9487 toggle_play_pause
+    ```
 

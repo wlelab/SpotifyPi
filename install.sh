@@ -22,4 +22,4 @@ cp -b autostart /home/pi/.config/lxsession/LXDE-pi/autostart
 chmod 777 /home/pi/bin/spotifypi_service.py
 chmod 777 /home/pi/bin/start_spotifypi_service.sh
 chmod 777 /home/pi/bin/start_kiosk.sh
-chmod 777 /home/pi/.config/lxsession/LXDE-pi/autostart
+chmod 666 /home/pi/.config/lxsession/LXDE-pi/autostart
