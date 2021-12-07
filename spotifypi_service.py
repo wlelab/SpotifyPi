@@ -79,7 +79,7 @@ def run_cmd(cmd):
         return f'[volume]({result})'
     elif name == 'set_volume':
         if len(cmd) == 1:
-            return 'missing'
+            return '[error](missing)'
         result = set_volume(cmd[1])
         return f'[volume]({result})'
     elif name == 'toggle_play_pause':
