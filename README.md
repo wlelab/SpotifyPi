@@ -64,7 +64,7 @@
 
     test.py's parameters format:
     ```
-    $ python3 test.py ws://<Your Raspberry Pi IP address>:<Port> <command>
+    $ python3 test.py ws://<Your Raspberry Pi IP address>:<Port> <Command>
     ```
 4. For example, to set the volume:
     ```
